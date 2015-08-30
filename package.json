@@ -1,0 +1,19 @@
+{
+	"name": "DumaChallengeApp",
+  	"version": "0.0.0",
+  	"authors": [
+    "Michael Wanyoike <mike@brandiqa.com>"
+  ],
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/brandiqa/DumaChallengeApp.git"
+  },
+  "description": "Frontend Employer Dashboard for DumaWorks",
+  "license": "ISC",
+   "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-less": "3.0.2",
+    "gulp-livereload": "^3.7.0",
+    "gulp-load-plugins": "^0.5.3"
+  }
+}
