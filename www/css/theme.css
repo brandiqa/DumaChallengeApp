@@ -10,10 +10,36 @@
  *
  */
 @import "../lib/bootstrap-bower/css/bootstrap.min.css";
+@import "../lib/bootstrap-bower/css/bootstrap-theme.min.css";
 body {
-  padding-top: 30px;
+  padding-top: 10px;
   overflow-x: hidden;
 }
 #logo {
   width: 180px;
+}
+.page-header {
+  background-color: #ff8f00;
+  color: #FFFFFF;
+  text-align: center;
+}
+.page-header h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.btn-default {
+  background-image: linear-gradient(to bottom, #ffd299 0%, #ff8f00 100%);
+  text-shadow: none;
+  font-weight: 700;
+}
+.btn-default:hover,
+.btn-default:focus {
+  background-color: #ff8f00;
+}
+#signupForm .form-group legend {
+  color: #666666;
+}
+#signupForm .form-group label {
+  padding-top: 5px;
+  color: #666666;
 }
