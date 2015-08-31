@@ -32,6 +32,9 @@ dumaControllers.controller('CompanyProfileCtrl',['$scope','$rootScope',
 		$rootScope.title = 'Company Profile';
 		$rootScope.sub_title = 'Update Company Profile to access Employer Dashboard';
 		$rootScope.slim_title = '';
+		$scope.updateCompanyProfile = function(company) {
+			console.log(angular.toJson(company));
+		}
 	}]
 );
 
