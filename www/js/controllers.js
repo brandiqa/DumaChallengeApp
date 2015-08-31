@@ -21,6 +21,9 @@ dumaControllers.controller('LoginCtrl',['$scope','$rootScope',
 		$rootScope.title = 'Employer Login';
 		$rootScope.sub_title = 'Login to access dashboard';
 		$rootScope.slim_title = '';
+		$scope.login = function(user) {
+			console.log(angular.toJson(user));
+		}
 	}]
 );
 

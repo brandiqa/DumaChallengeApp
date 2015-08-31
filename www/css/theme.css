@@ -50,10 +50,17 @@ body {
 .btn-default:focus {
   background-color: #ff8f00;
 }
+form a {
+  padding-right: 30px;
+  font-weight: 700;
+}
 #signupForm .form-group legend {
   color: #666666;
 }
 #signupForm .form-group label {
   padding-top: 5px;
   color: #666666;
+}
+#loginForm {
+  margin-top: 30px;
 }
