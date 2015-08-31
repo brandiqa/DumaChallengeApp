@@ -16,4 +16,19 @@ angular.module('dumaApp',[
 			templateUrl: 'templates/signup.htm',
 			controller: 'SignupCtrl'
 		})
+		.state('login', {
+			url: '/login',
+			templateUrl: 'templates/login.htm',
+			controller: 'LoginCtrl'
+		})
+		.state('companyProfile', {
+			url: '/company-profile',
+			templateUrl: 'templates/company-profile.htm',
+			controller: 'CompanyProfileCtrl'
+		})
+		.state('dashboard', {
+			url: '/dashboard',
+			templateUrl: 'templates/employer-dashboard.htm',
+			controller: 'EmployerDashboardCtrl'
+		})
 })
