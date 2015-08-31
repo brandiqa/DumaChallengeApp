@@ -33,10 +33,16 @@
 			</div>
 		</nav>
 		<div class="container-fluid">
-			<div class="row">
-				<div class="view-container">
-					<section ui-view></section>
+			<div class="row page-header">
+				<div class="col-xs-12">
+					<h1 ng-bind="title"></h1>
+					<h2 ng-bind="sub_title" ></h2>
 				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="view-container">
+				<section ui-view></section>
 			</div>
 		</div>
 	</body>
