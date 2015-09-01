@@ -14,7 +14,7 @@ gulp.task('less', function() {
 gulp.task('watch', function() {
   livereload.listen();
   gulp.watch('www/less/**', ['less']);
-  gulp.watch(['www/index.html','www/js/*.js','www/templates/*.htm']).on('change', livereload.changed);
+  gulp.watch(['www/*.html','www/js/**/*.js','www/templates/*.htm','www/templates/dashboard/*.htm']).on('change', livereload.changed);
 });
 
 // The default task (called when you run `gulp` from cli)

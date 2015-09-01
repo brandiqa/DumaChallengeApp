@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="dumaDashboardApp">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/png" href="favicon.png" />
+		 <!-- compiled css output -->
+		<link href="css/dashboard.css" rel="stylesheet">
+		<!-- angular scripts -->
+		<script src="lib/angular/angular.min.js"></script>
+		<script src="lib/angular-resource/angular-resource.min.js"></script>
+		<script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+		<script src="lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+		<!-- custom scripts -->
+		<script src="js/dashboard/services.js"></script>
+		<script src="js/dashboard/controllers.js"></script>
+		<script src="js/dashboard/app.js"></script>
+		<title>DumaWorks App Challenge</title>
+	</head>
+	<body>
+		 <div id="wrapper">
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="http://dumaapp.dev">
+					<img src="img/duma_backend.png" alt="" id="logo" class="img-responsive">
+				</a>
+			</div>
+			<!-- Top Menu Items -->
+			<ul class="nav navbar-right top-nav">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="/#/login">Log Out</a></li>
+				</ul>
+			</ul>
+			<!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse" ng-controller="HeaderCtrl">
+				<ul class="nav navbar-nav side-nav">
+					<li ng-class="{active:isActive('/')}">
+						<a href="/dashboard.html#/" class="primary-link">My Jobs</a>
+					</li>
+					<ul class="sub-side-nav">
+						<li>
+							<a href="/dashboard.html#/jobs-list">New</a>
+						</li>
+						<li>
+							<a href="/dashboard.html#/jobs-list">Ongoing</a>
+						</li>
+						<li>
+							<a href="/dashboard.html#/jobs-list">Pending</a>
+						</li>
+						<li>
+							<a href="/dashboard.html#/jobs-list">Complete</a>
+						</li>
+					</ul>
+					<li>
+						<a href="/dashboard.html#/" class="primary-link">Profile</a>
+					</li>
+					<ul class="sub-side-nav">
+						<li>
+							<a href="/dashboard.html#/account">Account</a>
+						</li>
+						<li>
+							<a href="/dashboard.html#/company">Company</a>
+						</li>
+					</ul>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</nav>
+
+			<div id="page-wrapper">
+				<div class="container-fluid">
+					<div class="view-container">
+						<section ui-view></section>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 text-center">
+							<button class="btn btn-default">
+								Post New Job
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- /.container-fluid -->
+			</div>
+		<!-- /#page-wrapper -->
+		</div>
+	<!-- /#wrapper -->
+	</body>
+</html>

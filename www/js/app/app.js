@@ -1,4 +1,4 @@
-// Employer Dashboard App
+// Common App Modules
 
 angular.module('dumaApp',[
 	'ui.router',
