@@ -1,0 +1,18 @@
+[
+	{
+		"id" : 1,
+		"name": "Kevin Kiplagat",
+		"title": "Graphic Designer",
+		"age": 28,
+		"experience" : "5 years",
+		"imageUrl":"img/canidates/01.jpg"
+	},
+	{
+		"id" : 9,
+		"name": "Jane Oloo",
+		"title": "Graphic Designer",
+		"age": 24,
+		"experience" : "2 years",
+		"imageUrl":"img/candidates/09.jpg"
+	}
+]

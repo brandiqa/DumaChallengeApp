@@ -1,0 +1,38 @@
+[
+	{
+		"id":1,
+		"jobRole":"Graphic Designer",
+		"jobType":"Full time",
+		"location":"Nairobi",
+		"plan":"Free",
+		"status":"New",
+		"candidateMatches":1
+	},
+	{
+		"id":2,
+		"jobRole":"Graphic Designer",
+		"jobType":"Full time",
+		"location":"Mombasa",
+		"plan":"Basic",
+		"status":"Ongoing",
+		"candidateMatches":2
+	},
+	{
+		"id":3,
+		"jobRole":"Graphic Designer",
+		"jobType":"Full time",
+		"location":"Nakuru",
+		"plan":"Express",
+		"status":"Waiting",
+		"candidateMatches":3
+	},
+	{
+		"id":4,
+		"jobRole":"Graphic Designer",
+		"jobType":"Full time",
+		"location":"Eldoret",
+		"plan":"Elite",
+		"status":"Complete",
+		"candidateMatches":4
+	}
+]
