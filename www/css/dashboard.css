@@ -128,3 +128,11 @@ body {
 .sub-side-nav {
   list-style-type: none;
 }
+.panel-default .panel-heading {
+  background-image: linear-gradient(to bottom, #ffa533 0%, #ff8f00 100%);
+}
+.panel-default .panel-heading .panel-title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3em;
+}

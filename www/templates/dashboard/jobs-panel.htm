@@ -1,5 +1,27 @@
 <div class="row">
 	<div class="col-xs-12">
-		<h1>Jobs Panel</h1>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">My Jobs</h3>
+			</div>
+			<div class="panel-body">
+				<div class="col-xs-12 col-sm-4 text-center">
+					<div ang:round:progress data-round-progress-model="newJobs"></div>
+					<button class="btn btn-default">New</button>
+				</div>
+				<div class="col-xs-12 col-sm-4 text-center">
+					<div ang:round:progress data-round-progress-model="ongoingJobs"></div>
+					<button class="btn btn-default">Ongoing</button>
+				</div>
+				<div class="col-xs-12 col-sm-4 text-center">
+					<div ang:round:progress data-round-progress-model="waitingJobs"></div>
+					<button class="btn btn-default">Waiting</button>
+				</div>
+				<div class="col-xs-12 col-sm-4 text-center">
+					<div ang:round:progress data-round-progress-model="completeJobs"></div>
+					<button class="btn btn-default">Complete</button>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>

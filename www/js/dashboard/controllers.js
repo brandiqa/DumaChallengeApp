@@ -14,8 +14,41 @@ dumaControllers.controller('HeaderCtrl',['$scope','$location',
 
 dumaControllers.controller('JobsPanelCtrl',['$scope',
 	function($scope) {
-		$scope.jobs = 'My Jobs';
-		console.log('JobsPanelCtrl');
+		$scope.newJobs = {
+			label: 2,
+			percentage: 8
+		}
+
+		$scope.$watch('newJobs', function (newValue) {
+			newValue.percentage = newValue.label / 8;
+		}, true);
+
+		$scope.ongoingJobs = {
+			label: 3,
+			percentage: 8
+		}
+
+		$scope.$watch('ongoingJobs', function (newValue) {
+			newValue.percentage = newValue.label / 8;
+		}, true);
+
+		$scope.waitingJobs = {
+			label: 1,
+			percentage: 8
+		}
+
+		$scope.$watch('waitingJobs', function (newValue) {
+			newValue.percentage = newValue.label / 8;
+		}, true);
+
+		$scope.completeJobs = {
+			label: 2,
+			percentage: 8
+		}
+
+		$scope.$watch('completeJobs', function (newValue) {
+			newValue.percentage = newValue.label / 8;
+		}, true);
 	}]
 );
 

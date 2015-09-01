@@ -4,7 +4,8 @@ angular.module('dumaDashboardApp',[
 	'ui.router',
 	'ui.bootstrap',
 	'dumaDashboardApp.controllers',
-	'dumaDashboardApp.services'])
+	'dumaDashboardApp.services',
+	'angular.directives-round-progress'])
 
 .config(function($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise('/');
