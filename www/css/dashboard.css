@@ -11,6 +11,10 @@
  */
 @import "../lib/bootstrap-bower/css/bootstrap.min.css";
 @import "../lib/bootstrap-bower/css/bootstrap-theme.min.css";
+body {
+  overflow-x: hidden;
+  margin-bottom: 30px;
+}
 @media (min-width: 768px) {
   body {
     margin-top: 50px;
@@ -23,6 +27,9 @@
 }
 #logo {
   width: 180px;
+}
+.view-container {
+  margin: 15px;
 }
 .btn-default {
   background-image: linear-gradient(to bottom, #ffd299 0%, #ff8f00 100%);
