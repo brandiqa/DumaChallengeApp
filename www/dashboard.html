@@ -13,6 +13,7 @@
 		<script src="lib/angular-resource/angular-resource.min.js"></script>
 		<script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
 		<script src="lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+		<script src="lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 		<script src="lib/angular-round-progress-directive/angular-round-progress-directive.js"></script>
 		<!-- custom scripts -->
 		<script src="js/dashboard/services.js"></script>
@@ -20,14 +21,16 @@
 		<script src="js/dashboard/app.js"></script>
 		<title>DumaWorks App Challenge</title>
 	</head>
-	<body>
+	<body ng-controller="HeaderNavCtrl">
 		 <div id="wrapper">
 
 		<!-- Navigation -->
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#navbar" aria-expanded="false" aria-controls="navbar"
+					ng-click="navbarCollapsed = !navbarCollapsed">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -44,36 +47,23 @@
 				</ul>
 			</ul>
 			<!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-			<div class="collapse navbar-collapse navbar-ex1-collapse" ng-controller="HeaderCtrl">
+			<div id="navbar" class="collapse navbar-collapse" collapse="!navbarCollapsed">
 				<ul class="nav navbar-nav side-nav">
-					<li ng-class="{active:isActive('/')}">
-						<a href="/dashboard.html#/" class="primary-link">My Jobs</a>
+					<li ng-class="{ active: isActive('/')}">
+						<a href="/dashboard.html#/" ng-click="navbarCollapsed = !navbarCollapsed" class="primary-link">My Jobs</a>
 					</li>
-					<ul class="sub-side-nav">
-						<li>
-							<a href="/dashboard.html#/jobs-list">New</a>
-						</li>
-						<li>
-							<a href="/dashboard.html#/jobs-list">Ongoing</a>
-						</li>
-						<li>
-							<a href="/dashboard.html#/jobs-list">Pending</a>
-						</li>
-						<li>
-							<a href="/dashboard.html#/jobs-list">Complete</a>
-						</li>
-					</ul>
-					<li>
-						<a href="/dashboard.html#/" class="primary-link">Profile</a>
+					<li ng-class="{ active: isActive('/jobs-list?new')}">
+						<a href="/dashboard.html#/jobs-list?new" ng-click="navbarCollapsed = !navbarCollapsed" ng-click="navbarCollapsed = !navbarCollapsed" class="indent">New</a>
 					</li>
-					<ul class="sub-side-nav">
-						<li>
-							<a href="/dashboard.html#/account">Account</a>
-						</li>
-						<li>
-							<a href="/#/company-profile">Company</a>
-						</li>
-					</ul>
+					<li ng-class="{ active: isActive('/jobs-list?ongoing')}">
+						<a href="/dashboard.html#/jobs-list?ongoing" ng-click="navbarCollapsed = !navbarCollapsed" class="indent">Ongoing</a>
+					</li>
+					<li ng-class="{ active: isActive('/jobs-list?ongoing')}">
+						<a href="/dashboard.html#/jobs-list?ongoing" ng-click="navbarCollapsed = !navbarCollapsed" class="indent">Waiting</a>
+					</li>
+					<li ng-class="{ active: isActive('/jobs-list?ongoing')}">
+						<a href="/dashboard.html#/jobs-list?ongoing" ng-click="navbarCollapsed = !navbarCollapsed" class="indent">Complete</a>
+					</li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->

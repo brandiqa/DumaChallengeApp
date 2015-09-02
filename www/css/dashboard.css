@@ -11,13 +11,14 @@
  */
 @import "../lib/bootstrap-bower/css/bootstrap.min.css";
 @import "../lib/bootstrap-bower/css/bootstrap-theme.min.css";
-body {
-  margin-top: 10px;
-  overflow-x: hidden;
-}
 @media (min-width: 768px) {
   body {
     margin-top: 50px;
+  }
+}
+@media (max-width: 766px) {
+  body {
+    margin-top: 110px;
   }
 }
 #logo {
@@ -135,4 +136,7 @@ body {
   color: #fff;
   font-weight: bold;
   font-size: 1.3em;
+}
+.indent {
+  text-indent: 20px;
 }

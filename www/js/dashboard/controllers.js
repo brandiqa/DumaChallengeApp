@@ -4,7 +4,7 @@
 
 var dumaControllers = angular.module('dumaDashboardApp.controllers',[]);
 
-dumaControllers.controller('HeaderCtrl',['$scope','$location',
+dumaControllers.controller('HeaderNavCtrl',['$scope','$location',
 	function($scope, $location) {
 		$scope.isActive = function(viewLocation) {
 			return viewLocation == $location.path();
@@ -54,6 +54,5 @@ dumaControllers.controller('JobsPanelCtrl',['$scope',
 
 dumaControllers.controller('JobsListCtrl',['$scope',
 	function($scope) {
-		console.log('JobsListCtrl');
 	}]
 );

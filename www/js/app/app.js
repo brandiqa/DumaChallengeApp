@@ -3,6 +3,7 @@
 angular.module('dumaApp',[
 	'ui.router',
 	'ui.bootstrap',
+	'ngAnimate',
 	'dumaApp.controllers',
 	'dumaApp.services'])
 
@@ -25,10 +26,5 @@ angular.module('dumaApp',[
 			url: '/company-profile',
 			templateUrl: 'templates/company-profile.htm',
 			controller: 'CompanyProfileCtrl'
-		})
-		.state('dashboard', {
-			url: '/dashboard',
-			templateUrl: 'templates/employer-dashboard.htm',
-			controller: 'EmployerDashboardCtrl'
 		})
 })

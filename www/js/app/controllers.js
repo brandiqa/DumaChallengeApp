@@ -37,11 +37,3 @@ dumaControllers.controller('CompanyProfileCtrl',['$scope','$rootScope',
 		}
 	}]
 );
-
-dumaControllers.controller('EmployerDashboardCtrl',['$scope','$rootScope',
-	function($scope, $rootScope) {
-		$rootScope.title = '';
-		$rootScope.sub_title = '';
-		$rootScope.slim_title = 'Dashboard';
-	}]
-);

@@ -9,8 +9,10 @@
 		<link href="css/theme.css" rel="stylesheet">
 		<!-- angular scripts -->
 		<script src="lib/angular/angular.min.js"></script>
+		<script src="lib/angular-animate/angular-animate.min.js"></script>
 		<script src="lib/angular-resource/angular-resource.min.js"></script>
 		<script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+		<script src="lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 		<script src="lib/angular-bootstrap/ui-bootstrap.min.js"></script>
 		<!-- custom scripts -->
 		<script src="js/app/services.js"></script>
@@ -23,16 +25,24 @@
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container-fluid">
 				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#navbar" aria-expanded="false" aria-controls="navbar"
+					ng-click="navbarCollapsed = !navbarCollapsed">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 					<a class="navbar-brand" href="/#/">
 						<img src="img/duma_backend.png" alt="" id="logo" class="img-responsive">
 					</a>
 				</div>
-				<div id="navbar" class="navbar-collapse collapse">
+				<div id="navbar" class="navbar-collapse collapse" collapse="!navbarCollapsed">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="/#/">Sign Up</a></li>
-						<li><a href="/#/login">Log In</a></li>
-						<li><a href="/#/company-profile">Company Profile</a></li>
-						<li><a href="/dashboard.html">Employer Dashboard</a></li>
+						<li><a href="/#/" ng-click="navbarCollapsed = !navbarCollapsed">Sign Up</a></li>
+						<li><a href="/#/login" ng-click="navbarCollapsed = !navbarCollapsed">Log In</a></li>
+						<li><a href="/#/company-profile" ng-click="navbarCollapsed = !navbarCollapsed">Company Profile</a></li>
+						<li><a href="/dashboard.html" ng-click="navbarCollapsed = !navbarCollapsed">Employer Dashboard</a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div>

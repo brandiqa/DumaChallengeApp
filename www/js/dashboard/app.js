@@ -3,6 +3,7 @@
 angular.module('dumaDashboardApp',[
 	'ui.router',
 	'ui.bootstrap',
+	'ngAnimate',
 	'dumaDashboardApp.controllers',
 	'dumaDashboardApp.services',
 	'angular.directives-round-progress'])
